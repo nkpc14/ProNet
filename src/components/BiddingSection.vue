@@ -1,22 +1,49 @@
 <template>
     <div class="biddingSection">
-        <div class="biddingSection-left">
-            <h1>Start Bidding</h1>
-            <p class="biddingSection-left--info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum euismod enim, at maximus
-                elit elementum sit amet.
+        <div  class="biddingSection-left">
+            <h1 data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true">Start Bidding</h1>
+            <p data-aos="fade-up"
+               data-aos-offset="100"
+               data-aos-duration="500"
+               data-aos-easing="ease-in-out"
+               data-aos-mirror="true" class="biddingSection-left--info">
+                Do projects based on your skills. <strong>Start bidding now and become a Freelancer</strong>
             </p>
-            <a class="button-large" href="">Bid Now</a><br>
-            <p class="biddingSection-left--span">Lorem ipsum...</p>
+            <a data-aos="fade-up"
+               data-aos-offset="300"
+               data-aos-duration="1000"
+               data-aos-easing="ease-in-out"
+               data-aos-mirror="true" class="button-large" href="">Bid Now</a><br>
+            <p data-aos="zoom-in-up"
+               data-aos-offset="100"
+               data-aos-duration="500"
+               data-aos-easing="ease-in-out"
+               data-aos-mirror="true" class="biddingSection-left--span">Lorem ipsum...</p>
         </div>
 
         <div class="biddingSection-right">
-            <h1>Start Bidding</h1>
-            <p class="biddingSection-right--info">
+            <h1 data-aos="fade-left"
+                data-aos-offset="100"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true">Start Bidding</h1>
+            <p data-aos="zoom-in-up"
+               data-aos-offset="100"
+               data-aos-duration="500"
+               data-aos-easing="ease-in-out"
+               data-aos-mirror="true" class="biddingSection-right--info">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum euismod enim, at maximus
                 elit elementum sit amet.
             </p>
-            <img class="biddingSection-right--img" src="../assets/człowiek-z-laptopem_1133-54.png" alt="">
+            <img data-aos="zoom-in-left"
+                 data-aos-offset="100"
+                 data-aos-duration="500"
+                 data-aos-easing="ease-in-out"
+                 data-aos-mirror="true" class="biddingSection-right--img" src="../assets/człowiek-z-laptopem_1133-54.png" alt="">
         </div>
     </div>
 </template>

@@ -1,31 +1,53 @@
 <template>
     <div class="mainSection">
-        
-        <nav>
-            <h3>PRO<span>Net</span></h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a class="button-login" href="#">Login</a></li>
+
+        <nav >
+            <h3 data-aos="fade-right" data-aos-duration="1000" >NEX<span>US</span></h3>
+            <ul >
+                <li data-aos="fade-left" data-aos-duration="300"><a href="#">Home</a></li>
+                <li data-aos="fade-left" data-aos-duration="600"><a href="/work">Work</a></li>
+                <!--<li data-aos="fade-left" data-aos-duration="1000"><router-link to="dashboard/home" class="button-login">Login</router-link></li>-->
+                <li data-aos="fade-left" data-aos-duration="1000"><a href="https://nexuspro.herokuapp.com/accounts/google/login/" class="button-login">Login</a></li>
             </ul>
         </nav>
 
         <!--<img class="blue-shape" src="../assets/Blue Shape.png" alt="">-->
 
-        <div class="laptop">
-            <img class="dragon__top"  src="../assets/tail-clipart-8.png" alt="">
+        <div    data-aos="fade-right"
+                data-aos-offset="500"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"  class="laptop">
+            <img  class="dragon__top"  src="../assets/tail-clipart-8.png" alt="">
         </div>
 
-        <div class="main__info">
-            <span>Old Age Treats Freelance</span><br>
-            Writers Preety Gently
+        <div  class="main__info">
+            <span  data-aos="fade-up"
+                   data-aos-offset="100"
+                   data-aos-duration="1000"
+                   data-aos-easing="ease-in-out"
+                   data-aos-mirror="true">Network Where </span><br>
+            Virtuality Meets Reality
         </div>
 
-        <div class="small-info">
-            <p>The life of the professional writer-like that of any freelancer, whether.</p>
+        <div  class="small-info">
+            <p  data-aos="fade-up"
+                data-aos-offset="100"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true">We Provide You More Than Your Expectation</p>
+            <p  data-aos="fade-up"
+                data-aos-offset="100"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true">Connect To Unlock Your Potential </p>
         </div>
-        <a class="button-large" href=""> <span>G</span>et Started <span class="arrow">  </span></a>
-        <img class="dragon__bottom" src="../assets/DragonIcon_Blue_HEX.png" alt="">
+        <a  data-aos="zoom-in-up"
+            data-aos-offset="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true" class="button-large" href=""> <span>G</span>et Started <span class="arrow">  </span></a>
+        <img  class="dragon__bottom" src="../assets/DragonIcon_Blue_HEX.png" alt="">
 
     </div>
 </template>
@@ -152,7 +174,7 @@
         position: absolute;
         top:-20vw;
         right: -15vw;
-        transform: rotateZ(-20deg);
+        transform: rotateZ(-20deg)!important;
     }
     .dragon__bottom{
         opacity: 0.5;

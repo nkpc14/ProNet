@@ -1,8 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import store from './store';
+Vue.use(Router);
 
-Vue.use(Router)
+// My Fucntion to load dynamic Views
+function loadView(view) {
+  return () => import(/*webpackChunkName: "view-[request]"*/ `@/views/${view}.vue`)
+}
 
 export default new Router({
   mode: 'history',
@@ -11,15 +15,33 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: loadView('Home')
     },
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
+      component: loadView('Dashboard'),
+      // beforeEnter(to,from,next){
+      //   if(store.state.idToken){
+      //     next()
+      //   }
+      //   else{
+      //     next('/')
+      //   }
+      // }
+    },
+    {
+      path: '/dashboard/:page',
+      name: 'dashboard',
+      component: loadView('Dashboard'),
+      // beforeEnter(to,from,next){
+      //   if(store.state.idToken){
+      //     next()
+      //   }
+      //   else{
+      //     next('/')
+      //   }
+      // }
+    },
   ]
 })
